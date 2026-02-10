@@ -1,26 +1,32 @@
 {
   "java.server.launchMode": "Standard",
   "java.compile.nullAnalysis.mode": "disabled",
-  "redhat.telemetry.enabled": false,
-  "git.autofetch": true,
+
+  "editor.inlayHints.enabled": "off",
+  "editor.formatOnType": true,
+
   "java.project.referencedLibraries": [
     ".test/checkstyle-10.17.0-all.jar",
     ".test/junit-platform-console-standalone-1.11.0-M2.jar"
   ],
+  
   "files.exclude": {
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/CVS": true,
-    "**/.DS_Store": true,
-    "**/Thumbs.db": true,
     "**/.devcontainer": true,
     "**/.test": true,
     "**/.vscode": true,
     "**/.github": true,
     "**/.gitignore": true
   },
+
+  "git.autofetch": true,
+  "git.postCommitCommand": "push",
+
+  "github.copilot.inlineSuggest.enable": false,
+  "github.copilot.editor.enableAutoCompletions": false,
+  "chat.disableAIFeatures": true,
+
   "extensions.ignoreRecommendations": true,
   "java.format.settings.url": ".vscode/eclipse-java-google-style.xml",
+  "redhat.telemetry.enabled": false,
   "markdown.preview.doubleClickToSwitchToEditor": false
 }
